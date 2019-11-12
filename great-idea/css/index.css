@@ -63,4 +63,354 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+header  {
+	overflow: hidden;
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	background: rgba(255, 255, 255, 0.92);
+	margin-bottom: 500px;
+}
+.row {
+	margin: 20px;
+	
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+
+}
+
+.main-nav li a {
+	text-decoration: none;
+	color: rgb(129, 129, 129);
+	padding: 0 0 5px;
+	
+}
+
+.main-nav li a:hover {
+	color: black;
+	border-bottom: 2px solid black;
+}
+
+.title-text-box {
+	display: flex;
+	width: 90%;
+	max-width: 1140px;
+	margin: 0 auto 75px;
+}
+
+.title-text-box p {
+	line-height: 18px;
+	letter-spacing: 1px;
+	
+}
+.left-box {
+	display: flex;
+	width: 50%;
+	height: auto;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.left-box h1 {
+	font-size: 4.7rem;
+	text-align: center;
+	padding: 90px 10px 10px 0;
+}
+
+.get-started-button {
+	display: flex;
+	width: 50%;
+    padding: 10px 10px;
+    font-weight: 600;
+    color: black;
+	text-decoration: none;
+	border: 1px solid black;
+	justify-content: center;
+	transition: background 1s;
+	margin: 0 135.5px;
+}
+
+
+.get-started-button:hover {
+	color: white;
+	background: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+
+.right-box {
+	width: 410;
+	height: 400px;
+	padding: 50px 0;
+
+}
+
+.features-section {
+	width: 90%;
+	margin: 0 auto;
+}
+/* sections 2 columns in one row */
+
+.row-block {
+	display: flex;
+	margin: 50px 0;
+	justify-content: space-between;
+}
+
+.line-divide {
+	margin-bottom: 30px;
+	width: auto;
+}
+
+.line-divide-two {
+	border: 2px solid rgb(99, 99, 99);
+}
+
+.left-block, 
+.right-block {
+	
+	width: 48%;
+	margin: 0 1%;
+	align-content: center;
+	
+}
+
+
+
+.row-block h2 {
+	font-size: 125%;
+}
+
+.middle-img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.three-row {
+	margin: 10px 0 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.three-row h2 {
+	font-size: 115%;
+}
+
+
+
+.one-of-three-block {
+	width: 31%;
+	margin: 5px;
+	
+}
+
+footer {
+	margin: 0 auto 50px;
+	width: 90%;
+	padding-left: 10px;
+}
+
+footer nav address {
+	font-style: italic;
+	font-size: 95%;
+}
+
+footer nav p {
+	margin: 15px 0;
+	font-size: 97%;
+}
+
+.copyright {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.services-header-img {
+	width: 100%;
+	margin: 5px auto 20px;
+}
+
+.services-section h1 {
+	font-size: 170%;
+}
+
+.services-section p {
+	padding: 0 0 20px;
+	line-height: 20px;
+}
+
+section {
+	width: 90%;
+	margin: 20px auto 0;
+}
+
+.three-by-two {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 0 0 20px;
+	width: 100%;
+	
+}
+
+.card {
+	width: 47.5%;
+	border: 2px solid black;
+	border-radius: 3px;
+	align-items: space-between;
+	justify-content: space-between;
+	margin: 20px 0;
+	padding: 3% 4%;
+	background: lightgrey;
+
+}
+
+.card h2 {
+	margin-bottom: 20px;
+	font-size: 125%;
+}
+
+.card p {
+	margin-bottom: 20px;
+}
+
+.learn-more {
+	border: 1px solid black;
+	width: 150px;
+	padding: 10px;
+	border-radius: 10px;
+	background: white;
+	text-align: center;
+	transition: background 1s;
+}
+
+.learn-more:hover {
+	background: black;
+	color: white;
+}
+
+.bottom-two {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.left-content {
+	width: 48%;
+	display: flex;
+ 	flex-flow: column nowrap;
+	justify-content: space-between;
+  	
+	
+}
+
+.left-content h2 {
+	font-size: 120%;
+}
+
+.left-content p {
+	margin: 10px 0;
+}
+
+.left-content ul li {
+	list-style-type: circle;
+	margin: 3% 0 0 10%
+}
+
+.services-info-img {
+	width: 48%;
+	display: flex;
+	align-self: center;
+  	display: flex;
+  	flex-flow: row nowrap;
+  	align-items: flex-start;
+}
+
+section:last-of-type {
+	margin: 45px auto;
+}
+
+
+
+.about-container {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 80px 10px
+	
+}
+
+.team-box {
+	background: url(/great-idea/img/team.jpg);
+	background-size: cover;
+	height: 1301px;
+	width: 59%;
+	margin: 30px 0 0;
+	border-radius: 3px;
+
+}
+
+.team-box h1 {
+	margin: 20px 20px;
+	font-size: 5rem;
+	color: white;
+
+}
+
+.team-box p {
+	margin: 20px;
+	padding: 10px;
+	line-height: 1.2;
+	border-radius: 5px;
+	width: 500px;
+
+	background: rgba(255, 255, 255, 0.507)
+}
+
+.people-box {
+	width: 39%;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.person-card {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	margin: 30px;
+	border: 2px solid black;
+	padding: 10px;
+	background: rgb(37, 38, 41);
+	color: white;
+	border-radius: 3px;
+}
+
+.person-card img {
+	height: 150px;
+	border-radius: 50%
+}
+
+.name-story {
+	margin: 10px 0 0;
+}
+
+.name-story h2 {
+	font-size: 1.8rem;
+}
+
+.name-story p {
+	font-size: 93%;
+	line-height: 1.2;
+}
